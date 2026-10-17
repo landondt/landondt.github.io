@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b0e">
+  <meta name="description" content="A visual log of photographs from walks, trips, and passing moments.">
+  <title>PHOTOGRAPHY // FIELD NOTES</title>
+  <link rel="icon" href="assets/icons/moth.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <div class="site-shell">
+    <div class="utility-bar" aria-label="Site status"><span><span class="status-light"></span> CONNECTION: LOCAL / PUBLIC WEB</span><span id="system-clock">SYSTEM TIME: --:--:--</span><span class="utility-right">FILE NO. 0003</span></div>
+    <header class="masthead">
+      <div class="masthead-mark" aria-hidden="true"><span class="mark-cross">+</span><span class="mark-ring">◉</span><span class="mark-cross">+</span></div>
+      <div class="masthead-copy"><p class="eyebrow">AN INDEPENDENT PERSONAL WEBSITE · EST. 2026</p><a class="site-title" href="index.html">FIELD NOTES<span class="title-slash"> //</span></a><p class="masthead-subtitle">poems, photographs &amp; things worth keeping</p></div>
+      <div class="masthead-stamp" aria-label="Archive stamp"><span>PERSONAL</span><strong>ARCHIVE</strong><span>NO. 001</span></div>
+    </header>
+    <nav class="main-nav" aria-label="Main navigation"><span class="nav-label">INDEX</span><a class="nav-link" href="index.html"><span class="nav-glyph">⌂</span> HOME</a><a class="nav-link" href="poetry.html"><span class="nav-glyph">¶</span> POETRY</a><a class="nav-link active" href="photography.html" aria-current="page"><span class="nav-glyph">▧</span> PHOTOGRAPHY</a><a class="nav-link" href="index.html#about"><span class="nav-glyph">?</span> ABOUT</a><span class="nav-spacer"></span><span class="nav-end-note">YOU ARE HERE: /PHOTOGRAPHY</span></nav>
+
+    <main class="single-page-main">
+      <div class="breadcrumb"><a href="index.html">HOME</a> <span>/</span> PHOTOGRAPHY <span>/</span> <strong>INDEX</strong></div>
+      <section class="page-intro-panel">
+        <div class="panel-heading"><span class="heading-symbol">■</span><span>IMAGE_DIRECTORY.DAT</span><span class="heading-rule"></span><span class="panel-tag">DIRECTORY 02</span></div>
+        <div class="page-intro-content"><p class="eyebrow">A VISUAL LOG OF PLACES</p><h1>Photography log<span class="cursor" aria-hidden="true">_</span></h1><p>Photographs from walks, hikes, trips, and passing moments. A record of what caught my eye, even if only for a second.</p><p class="small-note"><span class="asterisk">※</span> THE TILES ARE PLACEHOLDERS. ADD YOUR PHOTOGRAPHS USING THE INSTRUCTIONS IN README.TXT.</p></div>
+      </section>
+
+      <section class="photo-index-section" aria-labelledby="photo-list-title">
+        <div class="section-heading"><div><span class="section-index">03 / IMAGE FILES</span><h2 id="photo-list-title">Selected frames</h2></div><span class="tiny-stamp">6 SLOTS / EMPTY</span></div>
+        <div class="photo-grid">
+          <button class="photo-tile" type="button" data-placeholder="Frame 001" aria-label="Frame 001 placeholder; replace with your own photograph"><span class="placeholder-scene scene-forest"><i></i><b></b><em></em></span><span class="photo-tile-info"><strong>FRAME_001.JPG</strong><span>FOREST / PLACEHOLDER</span></span></button>
+          <button class="photo-tile" type="button" data-placeholder="Frame 002" aria-label="Frame 002 placeholder; replace with your own photograph"><span class="placeholder-scene scene-water"><i></i><b></b><em></em></span><span class="photo-tile-info"><strong>FRAME_002.JPG</strong><span>WATER / PLACEHOLDER</span></span></button>
+          <button class="photo-tile" type="button" data-placeholder="Frame 003" aria-label="Frame 003 placeholder; replace with your own photograph"><span class="placeholder-scene scene-sky"><i></i><b></b><em></em></span><span class="photo-tile-info"><strong>FRAME_003.JPG</strong><span>SKY / PLACEHOLDER</span></span></button>
+          <button class="photo-tile" type="button" data-placeholder="Frame 004" aria-label="Frame 004 placeholder; replace with your own photograph"><span class="placeholder-scene scene-road"><i></i><b></b><em></em></span><span class="photo-tile-info"><strong>FRAME_004.JPG</strong><span>ROAD / PLACEHOLDER</span></span></button>
+          <button class="photo-tile" type="button" data-placeholder="Frame 005" aria-label="Frame 005 placeholder; replace with your own photograph"><span class="placeholder-scene scene-house"><i></i><b></b><em></em></span><span class="photo-tile-info"><strong>FRAME_005.JPG</strong><span>BUILDING / PLACEHOLDER</span></span></button>
+          <button class="photo-tile" type="button" data-placeholder="Frame 006" aria-label="Frame 006 placeholder; replace with your own photograph"><span class="placeholder-scene scene-night"><i></i><b></b><em></em></span><span class="photo-tile-info"><strong>FRAME_006.JPG</strong><span>AFTER DARK / PLACEHOLDER</span></span></button>
+        </div>
+        <p class="photo-help"><span class="hint-icon">[ NOTE ]</span> These are CSS illustrations, not actual photographs. Replace each tile with an image you own; the README includes a quick example.</p>
+      </section>
+      <div class="back-link-row"><a class="terminal-button" href="index.html">← RETURN TO HOME</a><span class="micro-copy">END OF DIRECTORY</span></div>
+    </main>
+    <footer class="site-footer"><span>FIELD NOTES // PERSONAL ARCHIVE</span><span>BUILT WITH HTML, CSS &amp; CURIOSITY</span><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">BACK TO TOP ↑</a></footer>
+  </div>
+
+  <dialog class="photo-dialog" id="photo-dialog" aria-labelledby="dialog-title">
+    <form method="dialog"><button class="dialog-close" aria-label="Close image details">[ CLOSE X ]</button></form>
+    <p class="eyebrow" id="dialog-kicker">IMAGE RECORD</p>
+    <h2 id="dialog-title">Frame details</h2>
+    <img class="dialog-photo" id="dialog-image" alt="" hidden>
+    <p id="dialog-description">This tile is a placeholder. Follow the README instructions to add one of your photographs here.</p>
+  </dialog>
+</body>
+</html>
