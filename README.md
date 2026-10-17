@@ -1,68 +1,45 @@
-# FIELD NOTES — personal poetry & photography website
+# Landon's Little Corner of the Web
 
-A small, retro-internet-inspired static website. It uses plain HTML, CSS, and JavaScript—no build tools, frameworks, server, or paid hosting are required.
+A deliberately old-school personal website inspired by raw 1990s homepages: Times New Roman, blue underlined links, simple bordered sections, a visitor counter, a scrolling welcome message, and an under-construction badge. It uses plain HTML, CSS, and a tiny bit of JavaScript. No frameworks, build steps, paid hosting, or tracking services.
 
-## Files
+## Publish on GitHub Pages
 
-- `index.html` — homepage, introduction, About Me section, and links to both collections.
-- `poetry.html` — sample poem entries to replace with your own writing.
-- `photography.html` — six visual placeholder tiles to replace with your own photographs.
-- `styles.css` — all layout, colors, responsive styles, and the early-2000s visual treatment.
-- `script.js` — clock, a clearly labeled local-only visit counter, and placeholder tile interaction.
-- `assets/icons/moth.svg` — tiny favicon.
-- `assets/photos/` — put your own image files here.
+1. Download and unzip this folder.
+2. Open your existing `YOUR-USERNAME.github.io` repository on GitHub.
+3. Replace the old website files with the contents of this folder. Upload the files and the `assets` folder's contents so `index.html`, `styles.css`, and `assets/` are all at the repository root level.
+4. Commit the changes. GitHub Pages should publish the update automatically if it is already enabled.
+5. Wait a minute or two, then refresh your site. If the old version remains, hard-refresh with `Ctrl + F5`.
 
-## Preview it on your computer
+## What is `assets/`?
 
-1. Download and extract this folder.
-2. Open `index.html` in a browser.
-3. Use the navigation links to open the Poetry and Photography pages.
+`assets/` is where the website keeps extra files that aren't HTML, CSS, or JavaScript. This version includes:
 
-No install or internet connection is needed for a local preview.
+- `assets/icons/moth.svg` — the little moth browser-tab icon and homepage decoration.
+- `assets/buttons/under-construction.svg` — a handmade retro badge.
+- `assets/photos/` — a place for your own photographs. It contains this guide so GitHub will keep the otherwise-empty folder.
 
-## Personalize the homepage
+GitHub does not preserve empty folders. A folder needs at least one file inside it to appear in your repository.
 
-Open `index.html` in a text editor (VS Code is a good free choice). Find the `ABOUT_ME.TXT` section and replace the starter bio with your own writing. You can also change `FIELD NOTES` and the subtitle in the header across all three HTML files. Keep the filenames and links unchanged unless you update the navigation links too.
+## Add your own photographs
 
-## Add poems
-
-In `poetry.html`, find the `poem-list` section. Replace the text inside each `.poem-record` with your poem title, optional subtitle, and poem text. Use `<br>` to make a line break inside a stanza and start a new `<p>` for each stanza. Example:
+1. Open `assets/photos/` in your repository.
+2. Choose **Add file → Upload files** and upload an image you own or have permission to share.
+3. Edit `photography.html` and replace one of the colored placeholder panels with an image. Example:
 
 ```html
-<div class="poem-text">
-  <p>first line of the poem<br>second line of the poem<br>third line of the poem</p>
-  <p>the next stanza starts here<br>and continues on the next line</p>
-</div>
+<figure class="box">
+  <img src="assets/photos/my-photo.jpg" alt="A short description of the photograph" style="width:100%;height:160px;object-fit:cover">
+  <figcaption><strong>MY-PHOTO.JPG</strong><br><span class="small">A caption goes here.</span></figcaption>
+</figure>
 ```
 
-To add a poem, copy one complete `<article class="poem-record"> ... </article>` block and paste it before the closing `</div>` for `.poem-list`. Change the record number and its title. Remove any starter notes after you finish editing.
+Make sure the filename and capitalization match exactly; GitHub Pages is case-sensitive.
 
-## Add photographs
+## Personalize it
 
-1. Put your image files in `assets/photos/`. Prefer compressed JPG or WebP files so the website loads quickly. Use descriptive filenames, such as `forest-path.jpg`.
-2. In `photography.html`, find the placeholder `<button class="photo-tile">` block you want to replace.
-3. Replace the placeholder scene span with an image. For example:
+- Replace the sample text on `index.html` with your own introduction.
+- Replace the starter poems on `poetry.html` with your own writing.
+- Add photos to `photography.html` using the instructions above.
+- Update the “Last updated” date when you make a meaningful change.
 
-```html
-<img class="real-photo" src="assets/photos/forest-path.jpg" alt="A narrow path through a quiet forest">
-```
-
-4. Keep the `.photo-tile-info` block below it and change the filename and caption to match your photo.
-5. Repeat for other photos. Use meaningful alt text that briefly describes each image.
-
-The image styling is already included. Clicking a tile will open the site’s image-detail dialog when a real image is added. Only post photos you took or have permission to publish.
-
-## Publish it free with GitHub Pages
-
-1. Sign in at https://github.com/ and create a **public** repository named `yourusername.github.io` (replace `yourusername` with your GitHub username).
-2. Upload all the files and folders from this project. Make sure `index.html` is at the top level of the repository, not buried inside an extra folder.
-3. In the repository, open **Settings → Pages**. Under the build/deployment source, select **Deploy from a branch**, choose `main` and `/ (root)`, then save.
-4. After GitHub finishes publishing, the site should appear at `https://yourusername.github.io/`.
-
-GitHub's official guide: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
-
-GitHub Pages is a static host. This site has no database, accounts, or server-side features. Anyone can read a public site, so check your content and remove private details before publishing.
-
-## Design notes
-
-The aesthetic is inspired by personal web pages from the early 2000s: compact monospace labels, beveled borders, dark panels, old-school directory links, status readouts, and a deliberately handmade layout. It takes broad stylistic inspiration from old internet mystery/horror games without using their content, logos, or assets.
+The counter only counts visits in the current browser on the current device. It is not a real global visitor count.
