@@ -44,3 +44,12 @@ footer { text-align: center; font-size: 13px; padding: 4px 0; }
 footer p { margin: 5px 0; }
 @media (max-width: 650px) { body { padding: 6px; } .page { padding: 10px; } .columns { grid-template-columns: 1fr; } .sidebar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); } .photo-gallery { grid-template-columns: 1fr 1fr; } .photo-placeholder { height: 120px; } }
 @media (max-width: 390px) { .sidebar, .photo-gallery { grid-template-columns: 1fr; } }
+
+/* Poetry archive */
+.poem-index { line-height: 1.8; }
+.poem { scroll-margin-top: 16px; }
+.poem h2 { text-transform: none; }
+.poem-text.poem-lines { font-style: normal; line-height: 1.55; }
+.poem-text.poem-lines p { margin: 0 0 18px; }
+.poem-text.poem-lines p:last-child { margin-bottom: 0; }
+.epigraph { margin: 8px 18px 2px; padding-left: 12px; border-left: 2px solid #aaaadd; font-style: italic; line-height: 1.5; }
