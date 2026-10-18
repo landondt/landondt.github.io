@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#fff"/><g fill="#800080" stroke="#300030" stroke-width="1.5"><path d="M31 29C19 3 4 12 10 31l18 7-8 12 12-7 12 7-8-12 18-7C60 12 45 3 33 29z"/><ellipse cx="32" cy="38" rx="4" ry="16" fill="#222"/><path d="M30 25Q23 13 20 15M34 25Q41 13 44 15" fill="none" stroke-width="2"/></g><circle cx="21" cy="26" r="3" fill="#ffff00"/><circle cx="43" cy="26" r="3" fill="#ffff00"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Purple and gold moth">
+  <!-- No background shape: the canvas remains transparent. -->
+  <g stroke="#38204d" stroke-width="1.5" stroke-linejoin="round">
+    <path fill="#79519a" d="M29 29C22 9 10 5 6 16 2 28 13 35 27 39L31 34Z"/>
+    <path fill="#79519a" d="M35 29C42 9 54 5 58 16c4 12-7 19-21 23L33 34Z"/>
+    <path fill="#62417f" d="M28 34C17 29 8 34 12 45c3 8 11 10 19-1l2-7Z"/>
+    <path fill="#62417f" d="M36 34c11-5 20 0 16 11-3 8-11 10-19-1l-2-7Z"/>
+    <path fill="#b99ad0" d="M27 28C21 17 15 14 11 17c-2 6 4 13 15 17Z"/>
+    <path fill="#b99ad0" d="M37 28c6-11 12-14 16-11 2 6-4 13-15 17Z"/>
+    <path fill="none" stroke="#e8c75a" stroke-width="1.4" d="M29 26Q23 14 18 14M35 26Q41 14 46 14"/>
+    <path fill="none" stroke="#e8c75a" stroke-width="1.1" d="M11 23Q16 29 24 31M53 23Q48 29 40 31M17 39Q21 42 26 39M47 39Q43 42 38 39"/>
+    <path fill="#28202d" d="M30 27Q32 24 34 27L36 43 32 50 28 43Z"/>
+    <path fill="#d7b74e" stroke="none" d="M31 31h2v3h-2zM31 37h2v3h-2zM31 43h2v3h-2z"/>
+  </g>
+  <circle cx="19" cy="24" r="2.2" fill="#ffdf71" stroke="#38204d" stroke-width=".7"/>
+  <circle cx="45" cy="24" r="2.2" fill="#ffdf71" stroke="#38204d" stroke-width=".7"/>
+  <circle cx="21" cy="39" r="1.5" fill="#ffdf71"/>
+  <circle cx="43" cy="39" r="1.5" fill="#ffdf71"/>
+</svg>
