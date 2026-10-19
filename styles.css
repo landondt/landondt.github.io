@@ -50,3 +50,17 @@ footer p { margin: 5px 0; }
 .poem-text.poem-lines p { margin: 0 0 18px; }
 .poem-text.poem-lines p:last-child { margin-bottom: 0; }
 .epigraph { margin: 8px 18px 2px; padding-left: 12px; border-left: 2px solid #aaaadd; font-style: italic; line-height: 1.5; }
+
+
+/* Homepage random photo + poetry ticker */
+.directory { line-height: 1.8; }
+.directory > p { margin: 8px 0 10px; }
+.poem-ticker-box { margin: 0 0 16px 20px; padding: 8px 10px; border: 1px dashed #800080; background: #ffffcc; color: #000080; overflow: hidden; }
+.poem-ticker-box .small { margin: 0 0 6px; color: #800000; }
+.poem-ticker-box marquee { display: block; padding: 3px 0; min-height: 1.2em; }
+.home-photo-feature { margin: 10px 0 16px 20px; }
+.home-photo-window { display: flex; align-items: center; justify-content: center; width: min(100%, 360px); height: 260px; box-sizing: border-box; margin: 0 auto; padding: 5px; border: 2px ridge #aaa; background: #eee; }
+.home-photo-window img { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border: 1px solid #aaa; }
+.home-photo-feature p { margin: 5px 0 0; }
+.spring-poem p.double-break { margin-bottom: 42px; }
+@media (max-width: 650px) { .poem-ticker-box, .home-photo-feature { margin-left: 0; } .home-photo-window { height: 230px; } }
