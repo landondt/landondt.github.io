@@ -1,5 +1,19 @@
 // Local visitor counter plus rotating homepage features.
 (function () {
+  // Use the browser's secure random generator when available, with an unbiased integer pick.
+  function randomIndex(max) {
+    if (window.crypto && window.crypto.getRandomValues && max > 0) {
+      var range = 0x100000000;
+      var limit = Math.floor(range / max) * max;
+      var values = new Uint32Array(1);
+      do {
+        window.crypto.getRandomValues(values);
+      } while (values[0] >= limit);
+      return values[0] % max;
+    }
+    return Math.floor(Math.random() * max);
+  }
+
   var counter = document.getElementById('counter');
   if (counter) {
     try {
@@ -45,18 +59,23 @@
     { src: 'assets/photos/img_1161.webp', alt: 'A dog resting in the shade of a tree in a park.' }
   ];
   var homePhoto = document.getElementById('random-home-photo');
+  var homePhotoLink = document.getElementById('random-home-photo-link');
   if (homePhoto && photos.length) {
     var photoIndex = 0;
     try {
       var previousPhoto = Number(localStorage.getItem('my-digital-home-random-photo') || '-1');
       var photoChoices = photos.map(function (_, index) { return index; }).filter(function (index) { return index !== previousPhoto; });
-      photoIndex = photoChoices[Math.floor(Math.random() * photoChoices.length)];
+      photoIndex = photoChoices[randomIndex(photoChoices.length)];
       localStorage.setItem('my-digital-home-random-photo', String(photoIndex));
     } catch (e) {
-      photoIndex = Math.floor(Math.random() * photos.length);
+      photoIndex = randomIndex(photos.length);
     }
     homePhoto.src = photos[photoIndex].src;
     homePhoto.alt = photos[photoIndex].alt;
+    if (homePhotoLink) {
+      homePhotoLink.href = photos[photoIndex].src;
+      homePhotoLink.setAttribute('aria-label', 'Open larger view: ' + photos[photoIndex].alt);
+    }
   }
 
   var stanzaTicker = document.getElementById('random-poem-stanza');
@@ -69,25 +88,21 @@
       'early morning drive · pale blue sky kisses · sad gray pavement · trees tower above · guard their own tiny houses',
       'squirrel scurries gently · brakes slam jarringly · people begin to honk · squirrel gets away',
       'could have kept going · chose to stop anyway',
-      'On a warm March night I sit on the steps— · The stone cool on my hands.',
-      'I sit and watch the world around me, · As the soft breeze blows through my hair.',
-      'I see dark, leafless trees looming above · Against a backdrop of white, glowing dots in the sky. · Dogs bark in the distance— · I like to think they’re laughing.',
-      'The air smells of clean, peaceful spring grass, · Warm and damp beneath the cold moon.',
+      'On a warm March night I sit on the steps; · The stone cool on my hands. · I sit and watch the world around me, · As the soft breeze blows through my hair.',
+      'I see dark, leafless trees looming above · Against a backdrop of white, glowing dots in the sky. · Dogs bark in the distance— · I like to think they’re laughing. · The air smells of clean, peaceful spring grass, · Warm and damp beneath the cold moon.',
       'Then appears a man before me. · So familiar yet still a stranger. · He asks if he may sit here too.',
-      'I scoot right over and let him sit. · He remarks that “Spring has come early,” · Then inquires if I’m excited.',
-      'I reply, simply, yes.',
-      'He sits and stares down toward the grass. · We sit in silence for a minute we wish would last forever.',
-      'He stands and takes a few measured steps, · Then turns to face me. · “Why are you afraid of death?” he asks. · Then I look to the stars, · And tell him—',
-      '“That is why.”'
+      'I scoot right over and let him sit. · He remarks that “Spring has come early,” · Then inquires if I’m excited. · I reply, simply, yes.',
+      'He sits and stares down toward the grass. · We sit in silence for a minute we wished would last forever.',
+      'He stands and takes a few measured steps, · Then turns to face me. · “Why are you afraid of death?” he asks. · Then I look to the stars, · And tell him— · “That is why.”'
     ];
     var stanzaIndex = 0;
     try {
       var previousStanza = Number(localStorage.getItem('my-digital-home-random-stanza') || '-1');
       var stanzaChoices = stanzas.map(function (_, index) { return index; }).filter(function (index) { return index !== previousStanza; });
-      stanzaIndex = stanzaChoices[Math.floor(Math.random() * stanzaChoices.length)];
+      stanzaIndex = stanzaChoices[randomIndex(stanzaChoices.length)];
       localStorage.setItem('my-digital-home-random-stanza', String(stanzaIndex));
     } catch (e) {
-      stanzaIndex = Math.floor(Math.random() * stanzas.length);
+      stanzaIndex = randomIndex(stanzas.length);
     }
     stanzaTicker.textContent = stanzas[stanzaIndex];
   }
