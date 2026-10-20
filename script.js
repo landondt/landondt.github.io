@@ -27,36 +27,36 @@
   }
 
   var photos = [
-    { src: 'assets/photos/img_0612.webp', alt: 'People and horses on a wide beach beside the water.' },
-    { src: 'assets/photos/img_0620.webp', alt: 'A small heart-shaped note hanging on a chain-link fence.' },
-    { src: 'assets/photos/img_0636.webp', alt: 'A Ferris wheel and boardwalk rides near the beach.' },
-    { src: 'assets/photos/img_0652.webp', alt: 'A person sitting on the beach facing the ocean.' },
-    { src: 'assets/photos/img_0663.webp', alt: 'A squirrel climbing the trunk of a tree.' },
-    { src: 'assets/photos/img_0669.webp', alt: 'A water bird swimming across a calm gray surface.' },
-    { src: 'assets/photos/img_0688.webp', alt: 'A cat peeking through a screened window.' },
-    { src: 'assets/photos/img_0692.webp', alt: 'A raccoon resting beneath a raised wooden deck.' },
-    { src: 'assets/photos/img_0714.webp', alt: 'Picnic tables under trees in warm late-day sunlight.' },
-    { src: 'assets/photos/img_0740.webp', alt: 'A small animal crossing a driveway beside a hedge.' },
-    { src: 'assets/photos/img_0760.webp', alt: 'A wasp perched among green leaves.' },
-    { src: 'assets/photos/img_0761.webp', alt: 'A small insect resting on a plant stem.' },
-    { src: 'assets/photos/img_0764.webp', alt: 'A rabbit sitting beside a path in lush greenery.' },
-    { src: 'assets/photos/img_0765.webp', alt: 'A butterfly resting on a pale green leaf.' },
-    { src: 'assets/photos/img_0777.webp', alt: 'A patterned butterfly resting among green leaves.' },
-    { src: 'assets/photos/img_0778.webp', alt: 'A spider on dark stones.' },
-    { src: 'assets/photos/img_0892.webp', alt: 'A bumblebee on a green leaf.' },
-    { src: 'assets/photos/img_0935.webp', alt: 'A bee gathering pollen from a bright yellow flower.' },
-    { src: 'assets/photos/img_0947.webp', alt: 'A coastal cliff above the ocean.' },
-    { src: 'assets/photos/img_0969.webp', alt: 'Green coastal vegetation above the sea.' },
-    { src: 'assets/photos/img_1056.webp', alt: 'A sloping autumn street beneath a speed-limit sign.' },
-    { src: 'assets/photos/img_1066.webp', alt: 'A close-up of a seed head in a field.' },
-    { src: 'assets/photos/img_1074.webp', alt: 'Large rocks in a shallow woodland stream.' },
-    { src: 'assets/photos/img_1081.webp', alt: 'A leaf-covered path winding through autumn woods.' },
-    { src: 'assets/photos/img_1094.webp', alt: 'A distant view across calm water toward houses.' },
-    { src: 'assets/photos/img_1120.webp', alt: 'A small animal standing near a wooden waterfront dock.' },
-    { src: 'assets/photos/img_1122.webp', alt: 'A distant animal on the open water beneath a hazy horizon.' },
-    { src: 'assets/photos/img_1128.webp', alt: 'A squirrel among dark tree branches.' },
-    { src: 'assets/photos/img_1157.webp', alt: 'A black-and-white dog resting in the grass.' },
-    { src: 'assets/photos/img_1161.webp', alt: 'A dog resting in the shade of a tree in a park.' }
+    { src: 'assets/photos/img_0612.webp', alt: 'people and horses on a wide beach beside the water.' },
+    { src: 'assets/photos/img_0620.webp', alt: 'a small heart-shaped note hanging on a chain-link fence.' },
+    { src: 'assets/photos/img_0636.webp', alt: 'a ferris wheel and boardwalk rides near the beach.' },
+    { src: 'assets/photos/img_0652.webp', alt: 'a person sitting on the beach facing the ocean.' },
+    { src: 'assets/photos/img_0663.webp', alt: 'a squirrel climbing the trunk of a tree.' },
+    { src: 'assets/photos/img_0669.webp', alt: 'a water bird swimming across a calm gray surface.' },
+    { src: 'assets/photos/img_0688.webp', alt: 'a cat peeking through a screened window.' },
+    { src: 'assets/photos/img_0692.webp', alt: 'a raccoon resting beneath a raised wooden deck.' },
+    { src: 'assets/photos/img_0714.webp', alt: 'picnic tables under trees in warm late-day sunlight.' },
+    { src: 'assets/photos/img_0740.webp', alt: 'a small animal crossing a driveway beside a hedge.' },
+    { src: 'assets/photos/img_0760.webp', alt: 'a wasp perched among green leaves.' },
+    { src: 'assets/photos/img_0761.webp', alt: 'a small insect resting on a plant stem.' },
+    { src: 'assets/photos/img_0764.webp', alt: 'a rabbit sitting beside a path in lush greenery.' },
+    { src: 'assets/photos/img_0765.webp', alt: 'a butterfly resting on a pale green leaf.' },
+    { src: 'assets/photos/img_0777.webp', alt: 'a patterned butterfly resting among green leaves.' },
+    { src: 'assets/photos/img_0778.webp', alt: 'a spider on dark stones.' },
+    { src: 'assets/photos/img_0892.webp', alt: 'a bumblebee on a green leaf.' },
+    { src: 'assets/photos/img_0935.webp', alt: 'a bee gathering pollen from a bright yellow flower.' },
+    { src: 'assets/photos/img_0947.webp', alt: 'a coastal cliff above the ocean.' },
+    { src: 'assets/photos/img_0969.webp', alt: 'green coastal vegetation above the sea.' },
+    { src: 'assets/photos/img_1056.webp', alt: 'a sloping autumn street beneath a speed-limit sign.' },
+    { src: 'assets/photos/img_1066.webp', alt: 'a close-up of a seed head in a field.' },
+    { src: 'assets/photos/img_1074.webp', alt: 'large rocks in a shallow woodland stream.' },
+    { src: 'assets/photos/img_1081.webp', alt: 'a leaf-covered path winding through autumn woods.' },
+    { src: 'assets/photos/img_1094.webp', alt: 'a distant view across calm water toward houses.' },
+    { src: 'assets/photos/img_1120.webp', alt: 'a small animal standing near a wooden waterfront dock.' },
+    { src: 'assets/photos/img_1122.webp', alt: 'a distant animal on the open water beneath a hazy horizon.' },
+    { src: 'assets/photos/img_1128.webp', alt: 'a squirrel among dark tree branches.' },
+    { src: 'assets/photos/img_1157.webp', alt: 'a black-and-white dog resting in the grass.' },
+    { src: 'assets/photos/img_1161.webp', alt: 'a dog resting in the shade of a tree in a park.' }
   ];
   var homePhoto = document.getElementById('random-home-photo');
   var homePhotoLink = document.getElementById('random-home-photo-link');
@@ -74,7 +74,7 @@
     homePhoto.alt = photos[photoIndex].alt;
     if (homePhotoLink) {
       homePhotoLink.href = photos[photoIndex].src;
-      homePhotoLink.setAttribute('aria-label', 'Open larger view: ' + photos[photoIndex].alt);
+      homePhotoLink.setAttribute('aria-label', 'open larger view: ' + photos[photoIndex].alt);
     }
   }
 
@@ -88,12 +88,12 @@
       'early morning drive · pale blue sky kisses · sad gray pavement · trees tower above · guard their own tiny houses',
       'squirrel scurries gently · brakes slam jarringly · people begin to honk · squirrel gets away',
       'could have kept going · chose to stop anyway',
-      'On a warm March night I sit on the steps; · The stone cool on my hands. · I sit and watch the world around me, · As the soft breeze blows through my hair.',
-      'I see dark, leafless trees looming above · Against a backdrop of white, glowing dots in the sky. · Dogs bark in the distance— · I like to think they’re laughing. · The air smells of clean, peaceful spring grass, · Warm and damp beneath the cold moon.',
-      'Then appears a man before me. · So familiar yet still a stranger. · He asks if he may sit here too.',
-      'I scoot right over and let him sit. · He remarks that “Spring has come early,” · Then inquires if I’m excited. · I reply, simply, yes.',
-      'He sits and stares down toward the grass. · We sit in silence for a minute we wished would last forever.',
-      'He stands and takes a few measured steps, · Then turns to face me. · “Why are you afraid of death?” he asks. · Then I look to the stars, · And tell him— · “That is why.”'
+      'on a warm march night i sit on the steps; · the stone cool on my hands. · i sit and watch the world around me, · as the soft breeze blows through my hair.',
+      'i see dark, leafless trees looming above · against a backdrop of white, glowing dots in the sky. · dogs bark in the distance— · i like to think they’re laughing. · the air smells of clean, peaceful spring grass, · warm and damp beneath the cold moon.',
+      'then appears a man before me. · so familiar yet still a stranger. · he asks if he may sit here too.',
+      'i scoot right over and let him sit. · he remarks that “spring has come early,” · then inquires if i’m excited. · i reply, simply, yes.',
+      'he sits and stares down toward the grass. · we sit in silence for a minute we wished would last forever.',
+      'he stands and takes a few measured steps, · then turns to face me. · “why are you afraid of death?” he asks. · then i look to the stars, · and tell him— · “that is why.”'
     ];
     var stanzaIndex = 0;
     try {
