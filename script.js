@@ -81,10 +81,10 @@
   var stanzaTicker = document.getElementById('random-poem-stanza');
   if (stanzaTicker) {
     var stanzas = [
-      'two crows flitter away · from barren branches · since the scheming caterpillar · devoured all the leaves',
+      'two crows flutter · from barren branches · since the scheming caterpillar · devoured all the leaves',
       'and deer stomp their hooves · at squirrels who are terrified · to share their treasure',
-      'what chimerical creature etches · its name upon our land · or dresses as a stately man in disguise · defending lions from their prey',
-      'and what belly beast of hate · stands in wait · just itching to be born',
+      'what fanciful beast etched · its name upon our land · or dresses as a stately man in disguise · defending lions from their prey',
+      'and what belly beast of hate · stands in wait · itching to be born',
       'early morning drive · pale blue sky kisses · sad gray pavement · trees tower above · guard their own tiny houses',
       'squirrel scurries gently · brakes slam jarringly · people begin to honk · squirrel gets away',
       'could have kept going · chose to stop anyway',
