@@ -64,3 +64,27 @@ footer p { margin: 5px 0; }
 .home-photo-window img { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border: 1px solid #aaa; box-sizing: border-box; }
 .home-photo-feature p { margin: 3px 0 0; line-height: 1.2; }
 @media (max-width: 650px) { .poem-ticker-box, .home-photo-feature { margin-left: 0; } .home-photo-window { height: 210px; } }
+
+/* the moth is a quiet secret link: keep it clickable without hover or pointer effects */
+.moth-secret-link,
+.moth-secret-link:visited,
+.moth-secret-link:hover,
+.moth-secret-link:active,
+.moth-secret-link:focus,
+.moth-secret-link:focus-visible {
+  color: inherit;
+  text-decoration: none;
+  background: transparent;
+  cursor: default;
+  outline: none;
+  box-shadow: none;
+}
+.moth-secret-link {
+  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+.moth-secret-link img {
+  pointer-events: none;
+  user-select: none;
+}
